@@ -15,7 +15,7 @@ vector<int> Solution::solve(int A, vector<int> &B) {
     for(int i=0;i<length;i++){
         for(int z=j;z<minid;z++){
         if(B[z]-B[minid]<=rem&&j<minid){
-            res[i]=j;rem-=(B[j]-B[minid]);
+            res[i]=z;rem-=(B[j]-B[minid]);
             break;
         }else{j++;}
         }
